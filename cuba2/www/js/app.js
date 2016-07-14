@@ -38,11 +38,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
          templateUrl: 'views/reg.html',
           controller: 'EnterController'
       })
-    .state('profile', {                         // страничка личный профиль при нажатии на фото в боковом меню
-        url: '/profile',
-        templateUrl: 'views/profile.html',
-        controller: 'EnterController'
-    })
+
    .state('menu', {
        url: '/menu',
          abstract: true,
