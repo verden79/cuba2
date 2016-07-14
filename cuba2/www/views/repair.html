@@ -1,0 +1,28 @@
+﻿<ion-view>
+    <ion-content>
+        <div class="startPages">
+            <div id="logo"><span>Востановление<br />доступа</span></div>
+            <form class="list" ng-submit="doLogin()">
+                <div class="mylb">
+                    Способ востановления пароля
+                </div>
+                <div >
+                    <select class="myselect" >
+                        <option style="background-color:#36263a" selected>Почта</option>
+                        <option style="background-color:#36263a">СМС</option>
+                        <option style="background-color:#36263a">Звонок</option>
+                    </select>
+                </div>
+                <div class="mylb">
+                    Введите адрес електронной почты
+                </div>
+                <label class="item item-input">
+                    <input type="password" placeholder="name@yourmail.ru">
+                </label>
+                <label id="lb-bt-V" class="item">
+                    <button id="bt-V" class="button button-block button-positive" type="submit">Востановить</button>
+                </label>
+            </form>
+        </div>    
+    </ion-content>
+</ion-view>

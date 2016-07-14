@@ -3,44 +3,35 @@
        
            
             <!-- тестовый блок  -->
-            <div class="list inform">
-                <div style="margin-top:15vh;"> <h2 style=" color:white"> Регистрация </h2> </div>
-                <div class="regfield">
-                   <label class="item item-input">
-                    <input type="text" placeholder="Электронная почта ">
-                  </label>
-                  <label class="item item-input">
-                    <input type="text" placeholder="Имя">
-                  </label>
-                  <label class="item item-input">
-                    <input type="text" placeholder="Пароль">
-                  </label>
-                   <label class="item item-input">
-                    <input type="text" placeholder="Подтвердите пароль">
-                  </label>
-                  <div class="list">
-
-                        <label class="item item-input item-select">
-                          <div class="input-label"  style="color:#cccccc">
-                            Ваш город
-                          </div>
-                          <select style="color:#cccccc; background-color:transparent;">
-                            <option style="background-color:#36263a">Москва</option>
-                            <option style="background-color:#36263a" selected>Питер</option>
-                            <option style="background-color:#36263a" >Казань</option>
-                          </select>
-                        </label>
-
-                      </div>
-                   <div style="width:90%;">
-                       <a class="button button-block button-positive" href="#/menu/page1" style="margin-left:10vw; background-color:#bf447c">
-                          Регистрация
-                      </a>
-                   </div>   
-                    
+        <div class="startPages">
+            <div id="logo"><span>Регистрация</span></div>
+            <form class="list" ng-submit="doLogin()">
+                <label class="item item-input">
+                    <input type="text" placeholder="Электронная почта" ng-model="loginData.mail">
+                </label>
+                <label class="item item-input">
+                    <input type="text" placeholder="Логин" ng-model="loginData.username">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Пароль" ng-model="loginData.password">
+                </label>
+                <label class="item item-input">
+                    <input type="password" placeholder="Подтвердите пароль" ng-model="loginData.confpassword">
+                    <a class="my-link" href="#/confirm">Забыли?</a>
+                </label>
+                <div>
+                    <select class="myselect">
+                        <option style="background-color:#36263a" selected>Ваш город</option>
+                        <option style="background-color:#36263a">Москва</option>
+                        <option style="background-color:#36263a">Питер</option>
+                        <option style="background-color:#36263a">Казань</option>
+                    </select>
                 </div>
-                  
-            </div>                 
+                <label id="lb-bt-V" class="item">
+                    <button id="bt-V" class="button button-block button-positive" type="submit">Регистрация</button>
+                </label>
+            </form>
+        </div>                 
        
     </ion-content>
 </ion-view>
