@@ -3,27 +3,24 @@
        
            
             <!-- тестовый блок  -->
-            <div class="list inform">
-                <div style="margin-top:20vh;"> <h2 style="color:white">ЛОГО</h2></div>
-                <div class="field">
-                  <label class="item item-input">
-                    <input type="text" placeholder="Имя">
-                  </label>
-                  <label class="item item-input">
-                    <input type="text" placeholder="Пароль">
-                  </label>
-                   <div style="width:90%;">
-                       <a class="button button-block button-positive" href="#/menu/page1" style="margin-left:10vw; background-color:#bf447c">
-                          Войти
-                      </a>
-                   </div>   
-                    
-                    <a class="areg" href="#/reg">
-                          Регистрация
-                    </a>  
-                </div>
-                  
-            </div>                 
+        <div class="startPages">
+            <div id="logo"><b>LOGO</b></div>
+            <form class="list" ng-submit="doLogin()">
+                <span>Неверное имя пользователя</span>
+                <label class="item item-input">
+                    <input type="text" placeholder="Имя" ng-model="loginData.username">
+                </label>
+                <span ng->Неверный пароль</span>
+                <label class="item item-input">
+                    <input type="password" placeholder="Пароль" ng-model="loginData.password">
+                    <a class="my-link" href="#/repair">Забыли?</a>
+                </label>
+                <label id="lb-bt-V" class="item">
+                    <button id="bt-V" class="button button-block button-positive" type="submit">Войти</button>
+                </label>
+                <a class="my-link" href="#/reg">Регистрация</a>
+            </form>
+        </div>                 
        
     </ion-content>
 </ion-view>
