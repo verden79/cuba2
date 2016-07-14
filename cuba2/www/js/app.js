@@ -45,7 +45,16 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
          templateUrl: 'views/menu.html',
           controller: 'MenuController'
       })
-
+    .state('repair', {
+        url: '/repair',
+        templateUrl: 'views/repair.html',
+        controller: 'EnterController'
+    })
+    .state('confirm', {
+        url: '/confirm',
+        templateUrl: 'views/confirm.html',
+        controller: 'EnterController'
+    })
     .state('menu.page1', {
       url: '/page1',
       views: {
