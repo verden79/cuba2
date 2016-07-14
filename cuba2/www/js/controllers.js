@@ -46,6 +46,16 @@ angular.module('starter.controllers', [])
     
 })
 
+.controller("ProfileController", function ($scope) {
+    $scope.user = { name: "Irina" };
+    $scope.imgs = ["images/profile/fotoprofile.png",
+                   "images/profile/fotoprofile1.png",
+                   "images/profile/fotoprofile2.png",
+                   "images/profile/fotoprofile3.png",
+                   "images/profile/fotoprofile4.png"
+                  ]
+})
+
 .controller("PageController" ,function($scope){
 })
 

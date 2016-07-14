@@ -19,6 +19,12 @@ angular.module('starter.services', [])
             login: 'serg',
             passw: 'serg',
             txt: 'Hello Serg'
+        },
+         {
+            id: 2,
+            login: 'Irina',
+            passw: 'ira',
+            txt: ''
         }
    
     ]

@@ -38,7 +38,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
          templateUrl: 'views/reg.html',
           controller: 'EnterController'
       })
-
+    .state('profile', {                             // страничка профайл 
+        url: '/profile',
+        templateUrl: 'views/profile.html',
+        controller: 'ProfileController'
+    })
    .state('menu', {
        url: '/menu',
          abstract: true,
