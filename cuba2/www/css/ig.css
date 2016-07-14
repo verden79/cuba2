@@ -1,0 +1,63 @@
+﻿body {
+}
+
+.bgpict{
+   margin-top: 20px;
+}
+
+.bgpictr{
+    position:absolute;
+    top:5px;
+    right:10px;
+}
+.textmenuup{
+    color:white;
+    font-size:17px;
+}
+
+.inform{
+   width:100vw;
+    height:100vh;
+    margin: 0;
+    background-image: url('../images/bkgrnd.png');  /*no-repeat center top fixed; no-repeat center top;*/
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+     background-size: cover;
+     color: #c6c5c6;
+     text-align: center;
+}
+
+.field{
+    position: absolute;
+    width:100%;
+    top:50vh;
+}
+
+.regfield{
+    position: absolute;
+    width:100%;
+    top:30vh;
+}
+.inform label.item {
+        background-color:transparent;
+    }
+
+.inform label.item button{
+        background-color: #bf447c;
+    }
+
+
+
+.areg{
+color: white;
+font-size: 18px;
+text-decoration: none;
+}
+
+.mmup{
+    width:100%;
+    height:150px;
+    background-color: #443947;
+    text-align: center;
+}

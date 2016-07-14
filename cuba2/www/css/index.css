@@ -1,84 +1,137 @@
-* {
-    -webkit-tap-highlight-color: rgba(0,0,0,0);
-}
-
 body {
     -webkit-touch-callout: none;
     -webkit-text-size-adjust: none;
     -webkit-user-select: none;
-	background-color:#E4E4E4;
-    background-image:linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-ms-linear-gradient(top, #A7A7A7 0%, #E4E4E4 51%);
-    background-image:-webkit-gradient(
-        linear,
-        left top,
-        left bottom,
-        color-stop(0, #A7A7A7),
-        color-stop(0.51, #E4E4E4)
-    );
-    background-attachment:fixed;
-    font-family:'HelveticaNeue-Light', 'HelveticaNeue', Helvetica, Arial, sans-serif;
-    font-size:12px;
-    height:100%;
-    margin:0px;
-    padding:0px;
-    text-transform:uppercase;
-    width:100%;
-	
-    background-color:#32383d;
+    background-color: dodgerblue;
     font-family: 'RobotoRegular', 'Droid Sans', 'Segoe UI', Segoe, 'San Francisco', 'Helvetica Neue', Helvetica, Arial, Geneva, sans-serif;
     font-size:12px;
 }
 
 .app {
     background: url(../images/cordova.png) no-repeat center top; 
+    background-size: contain;
     position: absolute;             
     left: 50%;
     top: 50%;
-    height: 50px;                  
-    width: 225px;                   
+    height: 30px;                  
+    width: 250px;                   
     text-align: center;
-    padding: 180px 0px 0px 0px;     
-    margin: -115px 0px 0px -112px;
-}
-
-@media screen and (min-aspect-ratio: 1/1) and (min-width:400px) {
-    .app {
-        background-position:left center;
-        padding:75px 0px 75px 170px;
-        margin:-90px 0px 0px -198px;
-    }
-}
-
-h1 {
-    font-size:24px;
-    font-weight:normal;
-    margin:0px;
-    overflow:visible;
-    padding:0px;
-    text-align:center;
+    padding: 200px 0px 0px 0px;     
+    margin: -125px;
 }
 
 .event {
-    border-radius:4px;
-    -webkit-border-radius:4px;
-    color:#FFFFFF;
-    font-size:12px;
-    margin:0px 30px;
-    padding:2px 0px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    color: #FFFFFF;
+    margin: 27px;
+    padding: 4px 0px;
+    text-transform: uppercase;
+    background-color: #696969;
+    animation: fade 3000ms infinite;
+    -webkit-animation: fade 3000ms infinite;
 }
 
-.event.listening {
-    background-color:#333333;
-    display:block;
+.ready {
+    background-color: dodgerblue;
+}
+.padding .scroll-content .ionic-scroll .overflow-scroll  .has-header{
+    
+}
+.newsd{
+    display: block;
+    
+}
+.news-head{
+    display: inline-block;
+    display: -webkit-box;
+    width: 100%;
+    height: 3em;
+    float:left;
+}
+.news-head-l{
+    width: 12%;
+    height:inherit;
+}
+.news-head-c {
+    width: 81%;
+    height:inherit;
+    padding: 0 4px 0 4px;
+}
+.news-head-r{
+    width:6%;
+    height:inherit;
+    overflow:hidden;
+    float:right;
+}
+.news-head i{
+    height:inherit;
+    font-size: 100%;
+    font-weight:900;
+    overflow:hidden;
+}
+.news-head img{
+    float: left;
+    /*margin-top: 0.5em;*/
+    height: 3em;
+    width:3em;
+    border-radius: 1.5em;
 }
 
-.event.received {
-    background-color:#4B946A;
-    display:none;
+.nws-bott{
+    border-width:thick;
+    border-bottom: 2px solid #808080;
 }
-
+.nws-bott i{
+    float:right;
+}
+.nws-bott a{
+    text-decoration: none;
+}
+div.nws-bott div.nws-bott-like{
+    float:right;
+    height:10px;
+    width:10px;
+    margin-top: 0.5em;
+    margin-right: 0.5em;
+    background-color:dodgerblue;
+    border-radius: 50%;
+}
+#logo{
+    margin-top: 3em;
+    height: 6em;
+}
+#logo img{
+    width: 6em;
+    height: 6em;
+}
+#pg-login{
+    height: 100%;
+    background-color: dodgerblue;
+}
+#pg-login label.item{
+    margin-bottom: 1em;
+}
+#hd-login{
+    color: #ffffff;
+}
+#bt-login{
+    width:100%;
+    margin-bottom: 1em;
+}
+label.link a{
+    color: #ffffff;
+    font-style:italic;
+}
+#dv-bt-def{
+    width: 100%;
+    margin-top:30%;
+}
+#dv-bt-def button{
+    width:100%;
+    color: #ffffff;
+    background-color:mediumblue;
+}
 @keyframes fade {
     from { opacity: 1.0; }
     50% { opacity: 0.4; }
@@ -90,8 +143,9 @@ h1 {
     50% { opacity: 0.4; }
     to { opacity: 1.0; }
 }
- 
-.blink {
-    animation:fade 3000ms infinite;
-    -webkit-animation:fade 3000ms infinite;
+
+@media screen and (orientation: portrait) {
+}
+
+@media screen and (orientation: landscape) {
 }
