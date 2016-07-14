@@ -9,7 +9,8 @@ angular.module('starter.controllers', [])
     
     $scope.message = User.all[0].txt;
     $scope.user = User.all[0];
-   
+
+
     $scope.checkuser = function (log,pas) {
         // User.check
        // if (log == 'test' && pas == 'test') $scope.message = "Hello user!";
