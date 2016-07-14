@@ -33,10 +33,17 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
          templateUrl: 'views/enter.html',
           controller: 'EnterController'
       })
-    .state('reg', {
+    .state('reg', {                             // страничка регистрации
          url: '/reg',
          templateUrl: 'views/reg.html',
           controller: 'EnterController'
+      })
+
+   .state('menu', {
+       url: '/menu',
+         abstract: true,
+         templateUrl: 'views/menu.html',
+          controller: 'MenuController'
       })
     .state('repair', {
         url: '/repair',
@@ -48,13 +55,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         templateUrl: 'views/confirm.html',
         controller: 'EnterController'
     })
-   .state('menu', {
-       url: '/menu',
-         abstract: true,
-         templateUrl: 'views/menu.html',
-          controller: 'MenuController'
-      })
-
     .state('menu.page1', {
       url: '/page1',
       views: {

@@ -1,11 +1,9 @@
 <ion-view view-title="NewsBoard">
     <ion-content>
-       
-           
             <!-- тестовый блок  -->
         <div class="startPages">
             <div id="logo"><b>LOGO</b></div>
-            <form class="list" ng-submit="doLogin()">
+            <form class="list" >
                 <span>Неверное имя пользователя</span>
                 <label class="item item-input">
                     <input type="text" placeholder="Имя" ng-model="loginData.username">
@@ -16,8 +14,9 @@
                     <a class="my-link" href="#/repair">Забыли?</a>
                 </label>
                 <label id="lb-bt-V" class="item">
-                    <button id="bt-V" class="button button-block button-positive" type="submit">Войти</button>
                 </label>
+                    <a id="bt-V" class="button button-block button-positive" href="#/menu/page1">Войти</a>
+                
                 <a class="my-link" href="#/reg">Регистрация</a>
             </form>
         </div>                 
