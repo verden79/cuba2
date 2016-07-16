@@ -57,7 +57,8 @@ angular.module('starter.controllers', [])
                   ]
 })
 
-.controller("PageController" ,function($scope){
+.controller("PageController", function ($scope) {
+
 })
 
 
