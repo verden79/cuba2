@@ -86,11 +86,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             }
     })
-    .state('menu.settings', {
-        url: '/settings',
+    .state('menu.news', {
+        url: '/news',
         views: {
             'menuContent': {
-                templateUrl: 'views/settings.html',
+                templateUrl: 'views/news.html',
                 controller: 'PageController'
             }
         }
