@@ -30,34 +30,47 @@ angular.module('starter.controllers', [])
 
 .controller("MenuController" ,function($scope){
   $scope.menus = [
-    {title: "Книга рецептов"},
-    {title: "Журнал"},
-    {title: "Форум"},
-    {title: "Добавь своё"},
-    {title: "Книга рецептов"},
-    {title: "Полезное"},
-    {title: "Конкурсы"},
-    {title: "Найди рецепт"},
-    {title: "Фотографии"},
-    {title: "Советы"},
-    {title: "Однокурсники"},
-    {title: "Настройки"}
-  ];
+   ];
   $scope.pers = { name: "Aleksey Pirogov" , balls : 0};
     
 })
 
 .controller("ProfileController", function ($scope) {
     $scope.user = { name: "Irina" };
-    $scope.imgs = ["images/profile/fotoprofile.png",
-                   "images/profile/fotoprofile1.png",
-                   "images/profile/fotoprofile2.png",
-                   "images/profile/fotoprofile3.png",
-                   "images/profile/fotoprofile4.png"
-                  ]
+    $scope.imgs = [
+        "images/profile/fotoprofile.png",
+        "images/profile/fotoprofile1.png",
+        "images/profile/fotoprofile2.png",
+        "images/profile/fotoprofile3.png",
+        "images/profile/fotoprofile4.png"
+    ];
+    $scope.options = {
+        loop: false,
+        effect: 'scroll',
+        speed: 500,
+    };
+
+    $scope.$on("$ionicSlides.sliderInitialized", function (event, data) {
+        // data.slider is the instance of Swiper
+        $scope.slider = data.slider;
+    });
+
+    $scope.$on("$ionicSlides.slideChangeStart", function (event, data) {
+        console.log('Slide change is beginning');
+    });
+
+    $scope.$on("$ionicSlides.slideChangeEnd", function (event, data) {
+        // note: the indexes are 0-based
+        $scope.activeIndex = data.activeIndex;
+        $scope.previousIndex = data.previousIndex;
+    });
+
+
+
 })
 
-.controller("PageController" ,function($scope){
+.controller("PageController", function ($scope) {
+
 })
 
 

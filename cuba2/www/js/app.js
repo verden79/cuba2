@@ -68,15 +68,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
       }
     })
-    .state('menu.recipes', {
-        url: '/recipes',
-        views: {
-            'menuContent': {
-                templateUrl: 'views/recipes.html',
-                controller: 'PageController'
-            }
-        }
-    })
     .state('menu.page2', {
        url: '/page2',
        views: {
@@ -86,11 +77,11 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
                 }
             }
     })
-    .state('menu.news', {
-        url: '/news',
+    .state('menu.settings', {
+        url: '/settings',
         views: {
             'menuContent': {
-                templateUrl: 'views/news.html',
+                templateUrl: 'views/settings.html',
                 controller: 'PageController'
             }
         }

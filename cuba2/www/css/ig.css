@@ -66,3 +66,18 @@ text-decoration: none;
     width: 100%;
     font-size:18px;
 }
+.profilebox{
+    margin-top:260px;
+    width:100%;
+    padding:15px;
+}
+.pboxr{
+  margin-left:10px;
+}
+.img1 {
+    margin-top:0px;
+}
+.butspace{
+    margin-top:3px;
+    margin-bottom:3px;
+}
