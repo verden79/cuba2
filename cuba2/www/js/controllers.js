@@ -34,7 +34,7 @@ angular.module('starter.controllers', [])
   $scope.pers = { name: "Aleksey Pirogov" , balls : 0};
     
 })
-
+   
 .controller("ProfileController", function ($scope) {
     $scope.user = { name: "Irina" };
     $scope.imgs = [

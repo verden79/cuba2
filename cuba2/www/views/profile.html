@@ -1,14 +1,10 @@
 ﻿<ion-view>
-    <ion-content scroll="false">
-        <ion-slides options="options" slider="data.slider">
-            <ion-slide-page ng-repeat="ft in imgs">
+    <ion-content class="bodyprof">
                 <div class="headprofile">
-                    <img style="width:100%"  src={{ft}} />
+                    <img src="{{imgs[0]}}" />     
                 </div>
-            </ion-slide-page>
-        </ion-slides>
         
-        </ion-content>
+  
         <div class="profilebox">
             <div class="row">
                 <div class="col col-10"> <img class="img1" src="../images/profile/ico/ico_1.png" />  </div>
@@ -48,10 +44,40 @@
                     <button class="button button-small button-stable button-outline butspace">  Арамейский  </button>
                 </div>
             </div>
-          
        </div>
-            
+        <div class="profileboxin">
+            <div class="row">
+                <div class="col col-10"> <img class="img1" src="../images/profile/ico/ico_1.png" />  </div>
+                <div class="col col-75 pboxr">
+                    <h5>Мои события</h5>
+                </div>
+            </div>
+         
+        </div>
+         <!-- цикл событий -->
         
+            <div class="list card" style="margin:5px 0px">
+                <div class="item item-avatar item-button-right">
+                    <img src="../images/profile/fotoprofile.png" />
+                    <h2><b>Выпить кофе</b></h2>
+                    <p>25.06.2016 20:44</p>
+                    
+                         <span class="butrounr"> подтвердить </span>
+                    
+                </div>
+                <div class="pboxеtxt">
+                    Хочу выпить кофе с интересным собеседником.
+                    Могу еще и поесть с ним же.
+                </div>
+                <div class="item item-divider item-button-right" style="top:0px">
+                    <i class="ion-ios-navigate-outline"></i>
+                    <span class="txtkm"> 123 км</span>
+                    <span class="butrounr"> Запрошено </span>
+                    
+                </div>
+            </div>
+
+</ion-content>
         <!--<div class="headprofile">
             <img class="full-image" src="images/profile/fotoprofile.png" />
             <div> {{user.name}}  </div>

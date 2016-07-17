@@ -61,18 +61,36 @@ text-decoration: none;
     background-color: #443947;
     text-align: center;
 }
-
+/* блок css для профиля */
 .headprofile{
     width: 100%;
     font-size:18px;
 }
+.headprofile img{
+    width: 100%;
+}
+
 .profilebox{
-    margin-top:260px;
     width:100%;
     padding:15px;
+     box-shadow: 0 0 10px rgba(0,0,0,0.5); /* Параметры тени */
+    margin-bottom:5px;
+    background-color:#ffffff;
 }
+.profileboxin{
+    width:100%;
+    padding:0px 15px;
+    background-color:#ededed;
+}
+.bodyprof{
+      background-color:#ededed;
+}
+
 .pboxr{
   margin-left:10px;
+}
+.pboxеtxt{
+  margin: 10px 10px;
 }
 .img1 {
     margin-top:0px;
@@ -80,4 +98,23 @@ text-decoration: none;
 .butspace{
     margin-top:3px;
     margin-bottom:3px;
+    margin-left:0px;
+    margin-right:0px;
 }
+.butrounr{
+  border-radius: 10px;
+  background-color:#808080;
+  line-height:15px;
+  color:white;
+  padding:1px 10px;
+  padding-bottom:2px;
+  font-size:10px; 
+  font-weight:bold;
+  position:absolute;
+  right:20px;
+}
+.txtkm {
+    font-size:10px;
+    color:#808080;
+}
+
