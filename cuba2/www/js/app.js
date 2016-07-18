@@ -64,18 +64,50 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
       views: {
           'menuContent': {
           templateUrl: 'views/page1.html',
-          controller: 'PageController'
+          controller: 'EventController'
         }
       }
     })
-    .state('menu.page2', {
-       url: '/page2',
+    .state('menu.notice', {         // страничка уведомления
+        url: '/notice',
+        views: {
+            'menuContent': {
+                templateUrl: 'views/notice.html',
+                controller: 'PageController'
+            }
+        }
+    })
+    .state('menu.event2', {
+       url: '/event2',
        views: {
           'menuContent': {
-                 templateUrl: 'views/page2.html',
-                  controller: 'PageController'
+                 templateUrl: 'views/event2.html',
+                  controller: 'EventController'
                 }
             }
+    })
+    .state('menu.myevent', {
+         url: '/myevent',
+         views: {
+             'menuContent': {
+                 templateUrl: 'views/myevent.html',
+                 controller: 'EventController'
+             }
+         }
+    })
+    .state('menu.myeventsend', {
+        url: '/myeventsend',
+        views: {
+            'menuContent': {
+                templateUrl: 'views/path3.html',
+                controller: 'EventController'
+            }
+        }
+    })
+    .state('eror', {
+         url: '/eror',
+         templateUrl: 'views/pageeroor.html',
+         controller: 'EnterController'
     })
     .state('menu.settings', {
         url: '/settings',
@@ -87,9 +119,9 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
         }
     })
 
+
   // if none of the above states are matched, use this as the fallback
     $urlRouterProvider.otherwise('/enter'); // /menu/page1
-
 });
 
 

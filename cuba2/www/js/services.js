@@ -5,28 +5,9 @@ angular.module('starter.services', [])
              id: 0,
              login: 'guest',
              passw: 'guest',
-             txt: 'Hello Guest'
-       },
+             name: '',
 
-       {
-            id: 1,
-            login: 'igor',
-            passw: 'igor',
-            txt: 'Hello Igor'
-        },
-        {
-            id: 2,
-            login: 'serg',
-            passw: 'serg',
-            txt: 'Hello Serg'
-        },
-         {
-            id: 2,
-            login: 'Irina',
-            passw: 'ira',
-            txt: ''
-        }
-   
+       }
     ]
     return {
         all: us,
@@ -34,7 +15,6 @@ angular.module('starter.services', [])
             for (i = 0; i < us.length; i++) {
                 if (log == us[i].login && pas == us[i].passw ) return us[i].txt;
             }
-           
             return "No users";
         }
     };

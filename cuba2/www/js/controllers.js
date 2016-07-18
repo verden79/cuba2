@@ -76,3 +76,7 @@ angular.module('starter.controllers', [])
 
 .controller("HeadController", function ($scope) {
 })
+
+.controller("EventController", function ($scope) {
+  
+})
