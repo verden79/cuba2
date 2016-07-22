@@ -1,5 +1,89 @@
 ﻿<ion-view>
-    <ion-content>
-        
-   </ion-content>
+    <ion-content class="bodyprof">
+    <div>
+        <div class="list card" style="margin:5px 2px">
+            <div class="item item-image">
+                <ya-map id="mapya" ya-zoom="15" ya-center="[37.64,55.76]" ya-after-init="afterMapInit($target)">
+                    <ya-geo-object ya-source="geoObject"></ya-geo-object>
+                </ya-map>
+            </div>
+            <div class="item">
+                <div class="bar bar-header item-input-inset">
+                    <label class="item-input-wrapper">
+                        <input type="search" ng-model="sh.text">
+                    </label>
+                    <button class="button button-clear">
+                        <i class="icon ion-ios-search placeholder-icon"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <!-- вторая карточка -->
+        <div class="list card" style="margin:5px 2px">
+             <div class="containerev">
+
+                <p> Тип события: Кофе </p>
+                <div>
+                        <input class="inp" type="text" placeholder="Назовите событие">
+                        <textarea placeholder="Введите описание" ></textarea>
+                </div>
+                
+                <div class="row">
+                    <div class="col col-10"> <input type="checkbox"> </div> 
+                    <div class="col col-90">Заявка требует подтверждения </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67" style="line-height:42px">Когда </div>
+                    <div class="col col-33"> <input type="datetime-local"> </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67" style="line-height:42px">Действует до </div>
+                    <div class="col col-33"> <input type="datetime-local"> </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67" style="line-height:42px">Принимать заявки до </div>
+                    <div class="col col-33"> <input type="datetime-local"> </div>
+                </div>
+                <div class="row">
+                    <div class="col col-67" style="line-height:42px"> Периодичность </div>
+                    <div class="col col-33"><select>
+                                                <option selected>Не повторять</option>
+                                                <option>Каждый день </option>
+                                                <option>Каждую неделю</option>
+                                                <option>Каждый месяц </option>
+                                                <option>Каждую год</option>    
+                                                <option>Другое</option>    
+                                            </select> 
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <!-- Дополнительно раздел-->
+        <div class="card" style="margin:5px 2px">
+            <div class="containerev">
+                <div class="row">
+                    <div class="col-90"><p> ДОПОЛНИТЕЛЬНО </p></div>
+                </div>
+                <div class="row">
+                    <div class="col-90"> <input type="range" name="volume" multiple="multiple"> </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10"> <input type="radio" name="sex"> </div>
+                    <div class="col col-90"> Мужской </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10"> <input type="radio" name="sex"> </div>
+                    <div class="col col-90"> Женский </div>
+                </div>
+                <div class="row">
+                    <div class="col col-10"> <input type="radio" name="sex" /> </div>
+                    <div class="col col-90"> Не имеет значения </div>
+                </div>
+            </div>
+        </div>
+           <div class="butwrap"> 
+            <a id="bt-v2" class="button button-positive" href="#">Создать</a>
+           </div> 
+</ion-content>
 </ion-view>

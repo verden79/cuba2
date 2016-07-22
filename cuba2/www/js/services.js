@@ -18,4 +18,25 @@ angular.module('starter.services', [])
             return "No users";
         }
     };
+})
+.factory('Language', function () {     // объект для локализации приложения
+    
+    var engLang = [{
+        // страница вход english
+        login: "login",
+        passw: "password",
+        button: "Enter",
+        reg: "Registration",
+        fg: "Forgot"
+    }];
+    var ruLang = [{
+        // страница вход русский язык
+        login: "Имя",
+        passw: "Пароль",
+        button: "Войти",
+        reg: "Регистрация",
+        fg: "забыли"
+    }];
+
+   
 });

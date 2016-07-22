@@ -2,7 +2,7 @@ angular.module('starter.controllers', [])
 
 
 .controller("EnterController", function ($scope, $ionicModal,User) {
-    //$ionicModal.fromTemplateUrl('views/recipes.html', { scope: $scope })
+    //$ionicModal.fromTemplateUrl('#/menus/event.html', { scope: $scope })
     //.then(function (modal) {
     //    $scope.modal = modal;
     //});
@@ -17,7 +17,6 @@ angular.module('starter.controllers', [])
        // else $scope.message = "Wrong user!";
         // var name = $scope.user.login;
         $scope.message = User.check(log,pas);
-        
         console.log($scope.message);
     }
     
@@ -78,5 +77,56 @@ angular.module('starter.controllers', [])
 })
 
 .controller("EventController", function ($scope) {
-  
+    
+    $scope.sh = {text:"ул. Крымский Вал, 9,1190049"};
+
+    // относительно работы с картами
+    //var _map;
+    //$scope.afterMapInit = function (map) {
+    //    _map = map;
+    //};
+    //$scope.del = function () {
+    //    _map.destroy();
+    //};
+    $scope.geoObjects =
+    {
+        geometry: {
+            type: 'Circle',
+            coordinates: [37.60, 55.76],
+            radius: 10000
+        },
+        properties: {
+            balloonContent: "Радиус круга - 10 км",
+            hintContent: "Подвинь меня"
+        }
+    };
+    $scope.geoObjects = [
+    {
+        geometry: {
+            type: 'LineString',
+            coordinates: [
+                [37.50, 55.80],
+                [37.40, 55.70]
+            ]
+        },
+        properties: {
+            hintContent: "",
+            balloonContent: ""
+        }
+    },
+    {
+        geometry: {
+            type: 'LineString',
+            coordinates: [
+                [37.50, 55.80],
+                [37.40, 55.80],
+                [37.50, 55.70],
+                [37.40, 55.70]
+            ]
+        },
+        properties: {
+            balloonContent: ""
+        }
+    }
+    ];
 })
